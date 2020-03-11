@@ -135,7 +135,6 @@ def find_projs(all_keywords,grams,sent,prjs,split_char=' '):
     p2=list(p2)
     
     #removing additional projects if an exact match is found
-    print("P2: ", p2)
     all_keywords1=list(p1)
     all_keywords2=[]
     for p in all_keywords1:
@@ -171,7 +170,6 @@ def find_projs(all_keywords,grams,sent,prjs,split_char=' '):
                 for i,ap in enumerate(all_keywords):
                     if g.strip() in ap:
                         partial.append(prjs[i])
-                        print("Partial: ", partial)
                 try:
                     r=all_keywords.index(g.strip())
                     
@@ -200,7 +198,6 @@ def find_projs(all_keywords,grams,sent,prjs,split_char=' '):
                         try:
                             if ap.split().index(g)==len(ap.split())-1 or ap.split().index(g)==0:
                                 partial.append(prjs[i])
-                                print("Partial: ", partial)
                         except:
                             pass
                 try:
