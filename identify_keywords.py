@@ -3,7 +3,6 @@ from nltk.tokenize import word_tokenize
 from nltk import everygrams
 from nltk.corpus import stopwords
 import copy
-import numpy as np
 
 cachedStopWords = stopwords.words("english")
 
