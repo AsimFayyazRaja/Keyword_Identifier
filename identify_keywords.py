@@ -75,8 +75,6 @@ def find_sub_keywords(all_keywords,grams,keys_found,sent,grams_done,partial_matc
                         keywords_indices.append(j)
                         one_word_projs.append(proj)
                         count+=1
-    print("keys_found at 2nd iter: ", keys_found)
-    print("PROJECTS Indices at 2nd iter: ", keywords_indices)
     
     return keys_found,keywords_indices
     
@@ -223,10 +221,8 @@ def find_projs(all_keywords,grams,sent,prjs,split_char=' '):
     p1_indices=[]
     p1=list(p1)
     for i in p1ind:
-        print(i, type(i))
         if type(i) is int:
             p1_indices.append(i)
-    print("Indices: ", p1_indices)
     prjs=np.array(prjs)
     p1=prjs[p1_indices]
     return set(p1)

@@ -7,7 +7,7 @@ given_keywords=["AI Algorithms", "Crazy Website", "MEAN website", "AI Hype", "AI
 #can be populated from DB, can be name of people, project names or anything.
 
 
-sentence="I like the dark"
+sentence="I want an Italian Pizza"
 
 keys_identified=identify.identify_keywords(given_keywords,sentence)
 
