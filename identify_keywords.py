@@ -3,6 +3,8 @@ from nltk.tokenize import word_tokenize
 from nltk import everygrams
 from nltk.corpus import stopwords
 import copy
+import warnings
+warnings.filterwarnings("ignore")
 
 cachedStopWords = stopwords.words("english")
 
